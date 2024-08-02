@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000;
+  --brown: brown;
+
+  --white: #fff;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+input {
+  padding: 10px 20px;
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  border: 1px solid var(--white);
+}
+input:focus {
+  border-color: var(--brown);
+  outline: none;
+}
+input[type="submit"],
+button,
+.btn {
+  appearance: none;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+}
+input[type="submit"]:hover,
+button:hover {
+  background-color: var(--brown);
+  color: var(--white);
+}
+
+.logo img {
+  width: 120px;
+  background-image: url("images/trnava-university-BEEyeib-am8-unsplash.jpg");
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  background: var(--black);
+  color: var(--white);
+}
+
+.header__holder {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px 0;
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0 -20px;
+  padding: 0;
+}
+
+header ul li {
+  padding: 0 20px;
+}
+
+header a {
+  color: var(--white);
+}
+
+.logo a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+a:hover {
+  color: aqua;
+}
+
+header nav {
+  flex: 1;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.banner {
+  position: relative;
+  background: url("./images/trnava-university-BEEyeib-am8-unsplash.jpg");
+}
+
+.login-banner {
+  position: relative;
+  isolation: isolate;
+}
+.login-banner .loginImg {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.login-form,
+.register-form {
+  display: grid;
+  gap: 10px;
+  text-align: start;
+}
+
+.banner__content {
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.banner__box {
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.75);
+  color: var(--white);
+  text-align: center;
+  padding: 80px;
+}
+
+.banner__box span {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.banner__box span:last-child {
+  margin-bottom: 0;
+}
+
+footer {
+  background: green;
+  color: var(--white);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer a {
+  color: var(--white);
+}
+
+footer a:hover {
+  color: aqua;
+}
+
+.loginImg {
+  width: 100%;
+}
+
+.RegImg {
+  height: 820px;
+  margin-top: 0px;
+  background-image: url("images/reg1.webp");
+}
+
+.table,
+th,
+td {
+  border: 1px solid black;
+}
+
+.feedback-wrapper {
+  background-image: url("images/feedback.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+  min-height: 100vh;
+}
+
+.feedback-inner {
+  width: 70%;
+  margin: 0 auto;
+  background-color: rgb(228, 228, 255);
+  padding: 30px 50px;
+}
+
+.feedback-wrapper h4 {
+  margin-bottom: 20px;
+}
+
+#comment-table {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+  width: 70%;
+  margin: 50px auto 0 auto;
+}
+
+#comment-table.show-table {
+  opacity: 1;
+  display: block;
+  visibility: visible;
+}
+
+#time-counter {
+  width: 15%;
+  aspect-ratio: 1;
+  margin: 0 auto;
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.show-table table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 0;
+}
+
+.show-table table td,
+.show-table table th {
+  border: 0;
+  padding: 20px;
+}
+
+.show-table table th {
+  background-color: blue;
+  color: white;
+  border: 0;
+}
+
+.show-table table tr {
+  background: white;
+  border: 1px solid blue;
+}
+
+.show-table table tr:last-child {
+  border-bottom: 1px solid blue;
+}
